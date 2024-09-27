@@ -454,7 +454,7 @@ end
                 }, actual_side)
 
                 local Container = library:create("Frame", {
-                    BackgroundColor3 = Color3.fromRGB(10, 10, 10),
+                    BackgroundColor3 = Color3.fromRGB(30, 30, 30),
                     BorderSizePixel = 0,
                     Position = UDim2.new(0, 1, 0, 1),
                     Size = UDim2.new(1, -2, 1, -2),
