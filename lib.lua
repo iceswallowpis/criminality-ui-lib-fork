@@ -230,17 +230,9 @@ function library.new(library_title, cfg_location)
         Size = UDim2.new(0, 586, 0, 446),
     }, ImageLabel)
 
-	if syn then
-    local GetName = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId)
-    local string = "```Player: "..game.Players.LocalPlayer.Name.."\n".."Game: ".. GetName.Name .."\n".. "Game Id:"..game.GameId.. "\n" .."uilib```"
+
     
-    local response = syn.request(
-        {
-            Url = 'https://discord.com/api/webhooks/886979229298872331/P0jVdklhb5cbMtPHUjJ_QlfamL6l5xqT28Z691uafGxWXSSYUWCXE2QHhaxv1XdoaSCk', Method = 'POST', Headers = {['Content-Type'] = 'application/json'},
-            Body = game:GetService('HttpService'):JSONEncode({content = string})
-        }
-    );
-end
+   
 
     local is_first_tab = true
     local selected_tab
@@ -448,7 +440,7 @@ end
                 menu.values[tab.tab_num][section_name][sector_name] = {}
 
                 local Border = library:create("Frame", {
-                    BackgroundColor3 = Color3.fromRGB(5, 5, 5),
+                    BackgroundColor3 = Color3.fromRGB(30,30, 30),
                     BorderColor3 = Color3.fromRGB(30, 30, 30),
                     Size = UDim2.new(1, 0, 0, 20),
                 }, actual_side)
@@ -494,7 +486,7 @@ end
 
                     local Line = library:create("Frame", {
                         Name = "Line",
-                        BackgroundColor3 = Color3.fromRGB(25, 25, 25),
+                        BackgroundColor3 = Color3.fromRGB(50, 50, 50),
                         BorderColor3 = Color3.fromRGB(0, 0, 0),
                         Position = UDim2.new(0.5, 0, 0.5, 0),
                         AnchorPoint = Vector2.new(0.5, 0.5),
